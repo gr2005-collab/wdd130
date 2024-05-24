@@ -1,0 +1,87 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Root CSS variables */
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --navigation-bg-color: #000;
+    --navigation-link-color: #fff;
+    --navigation-hover-link-color: #ccc;
+    --navigation-hover-bg-color: #333;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Add spacing between elements */
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+p {
+    padding: 25px 0;
+}
+
+nav {
+    background-color: var(--navigation-bg-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-bg-color);
+}
+
+/* Example navigation styling */
+nav {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #dddddd;
+    color: #000;
+  }
+  
+  aside{
+    width: 20em;
+    text-align: center;
+  }
+
+
+ /* Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  

@@ -1,0 +1,64 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables for color schema */
+:root {
+  --primary-color: steelblue;
+  --secondary-color: white;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1,
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hero article {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 600px; /* Limit width of the article */
+}
+
+.hero article img {
+  float: right;
+  margin-left: 20px;
+}
