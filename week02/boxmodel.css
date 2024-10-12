@@ -1,0 +1,36 @@
+/* box-model.css */
+
+/* Style the .callout class */
+.callout {
+    width: 400px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #247;
+    color: #fff;
+}
+
+/* Style the image within .callout */
+.callout img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 100px;
+    height: auto;
+}
+
+/* Style the blockquote */
+blockquote {
+    margin: 0;
+}
+
+/* Style the cite */
+cite {
+    display: block;
+    border-top: 1px dotted #fff;
+    padding-top: 3px;
+    text-align: right;
+    font-size: smaller;
+}
